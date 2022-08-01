@@ -1,0 +1,99 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    background-color: cadetblue;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+    border-bottom: 2px solid white;
+    
+}
+
+.logo img{
+    height: 70px;
+}
+
+footer{
+    display: flex;
+    background-color: cadetblue;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 3px solid white;
+    height: 180px;
+
+}
+
+.listas li{
+    list-style-type: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-right: 30px;
+    display: inline-flex;
+    color: lawngreen
+    
+      
+}
+
+.listas li a {
+    color: black;
+}
+
+
+.contenedor_main{
+    display: grid;
+    grid-template-columns: 25% 25%;
+    grid-template-rows: 500px;
+    grid-template-areas: "a1 a2";
+    justify-content: center;
+    height: 650px;
+    align-items: center;
+    background-color: black;
+    gap: 250px;
+}
+
+.formulario{
+    
+    border: 3px solid black;
+    padding: 1rem;
+    text-align: center;
+    background-color: cadetblue;
+    grid-area: a2;
+}
+
+.parrafo_main{
+    text-align: start;
+    font-size: 20px;
+    color: cadetblue
+
+}
+
+@media only screen and (max-width:600px){
+    .contenedor_main{
+        display: flex;
+        flex-direction: column;
+        height: 1200px;
+    }
+
+    .formulario{
+        padding-top: 2rem;
+    }
+
+    .parrafo_main{
+        margin-top: 6rem;
+    }
+    .header{
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .logo img{
+        height: 55px;
+    }
+    
+}
