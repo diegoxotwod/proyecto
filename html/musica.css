@@ -29,14 +29,14 @@ footer{
 
 }
 
-.listas li{
-    list-style-type: none;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-right: 30px;
-    display: inline-flex;
-    color: lawngreen
-    
-      
+.navbar .container-fluid a {
+    color: black;
+    text-decoration: underline;
+  
+}
+  
+.navbar .container-fluid li a {
+    color: black;
 }
 
 

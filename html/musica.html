@@ -6,51 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="musica.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
     <header>
         <div class="logo">
-        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2407fa49200073.58b71f807924b.png" alt="">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2407fa49200073.58b71f807924b.png" alt="">
         </div> 
-        <nav>
-            <ul class="listas">
-                <li>
-                    <a href="../index.html">HOME</a>
-                </li>
-                <li>
-                    <a href="galeria.html">GALERIA</a>
-                </li>
-                <li>
-                    <a href="discografia.html">DISCOGRAFIA</a>
-                </li>
-                <li>
-                    <a href="musica.html">MUSICA</a>
-                </li>
-                <li>
-                    <a href="contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm">
+            <div class="container-fluid">
+              <a class="nav-link" href="../index.html">HOME</a>
+              <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../html/GALERIA.html">GALERIA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../html/discografia.html">DISCOGRAFIA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../html/musica.html">MUSICA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../html/contacto.html">CONTACTO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
     </header>
     <main class="main">
         <div class="playlists">
-            <p class="titulo_1">AFTER HOURS</p>
+            <p class="h4 pb-2 mb-4 text-danger border-bottom border-danger">AFTER HOURS</p>
             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4yP0hdKOZPNshxUOjY0cZj?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" class="playlist"></iframe>
         </div>
 
         <div class="playlists">
-            <p class="titulo_2">DAWN FN</p>
+            <p class="h4 pb-2 mb-4 text-danger border-bottom border-danger">DAWN FN</p>
             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2nLOHgzXzwFEpl62zAgCEC?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" class="playlist"></iframe>
         </div>
 
         <div class="playlists">
-            <p class="titulo_3">STARBOY</p>
+            <p class="h4 pb-2 mb-4 text-danger border-bottom border-danger">STARBOY</p>
             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2ODvWsOgouMbaA5xf0RkJe?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" class="playlist"></iframe>       
         </div>
         
         <div class="playlists">
-            <p class="titulo_4">BEAUTY BEHIND THE MADNESS</p>
+            <p class="h4 pb-2 mb-4 text-danger border-bottom border-danger">BEAUTY BEHIND THE MADNESS</p>
             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0P3oVJBFOv3TDXlYRhGL7s?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" class="playlist"></iframe>        
         </div>
 
@@ -72,5 +80,7 @@
 
 
     <script src="https://kit.fontawesome.com/7d5dbb36d9.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
