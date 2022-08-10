@@ -113,7 +113,8 @@ footer{
         height: 1500px;
     }
 
-    .logo img{
-        height: 55px;
+    .img-thumbnail{
+        height: 40px;
+        width: 250px;
     }
 }
