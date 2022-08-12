@@ -71,52 +71,47 @@ footer {
     font-size: 30px; } }
 
 /* FIN INDEX */
-.row {
-  background-color: black;
-  height: 650px;
-  align-items: center; }
-
-.imagenes {
-  width: 300px;
-  height: 250px;
-  margin-top: 10px;
-  object-fit: cover; }
-
-.imagenes:hover {
-  transform: rotate(20deg); }
-
-footer {
-  height: 210px;
-  display: flex;
-  background-color: cadetblue;
+.contenedor_main {
+  display: grid;
+  grid-template-columns: 25% 25%;
+  grid-template-rows: 500px;
+  grid-template-areas: "a1 a2";
   justify-content: center;
+  height: 650px;
   align-items: center;
-  flex-direction: column;
-  width: 100%; }
+  background-color: black;
+  gap: 250px; }
+
+.formulario {
+  border: 3px solid black;
+  padding: 1rem;
+  text-align: center;
+  background-color: cadetblue;
+  grid-area: a2; }
+
+.parrafo_main {
+  text-align: start;
+  font-size: 20px;
+  color: cadetblue; }
 
 @media only screen and (max-width: 600px) {
   .contenedor_main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 700px; }
+    height: 1200px; }
+  .formulario {
+    padding-top: 2rem; }
+  .parrafo_main {
+    margin-top: 6rem; }
   .header {
     height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
-  .imagenes {
-    width: 100px;
-    height: 100px; }
-  .footer {
-    height: 100px; }
-  .listas li {
-    font-size: 12px; }
   .logo img {
     height: 55px; } }
 
-/* FIN GALERIA */
+/* FIN CONTACTO */
 .main_contenedor {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
@@ -184,6 +179,52 @@ footer {
     width: 250px; } }
 
 /* FIN DISCOGRAFIA */
+.row {
+  background-color: black;
+  height: 650px;
+  align-items: center; }
+
+.imagenes {
+  width: 300px;
+  height: 250px;
+  margin-top: 10px;
+  object-fit: cover; }
+
+.imagenes:hover {
+  transform: rotate(20deg); }
+
+footer {
+  height: 210px;
+  display: flex;
+  background-color: cadetblue;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%; }
+
+@media only screen and (max-width: 600px) {
+  .contenedor_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px; }
+  .header {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .imagenes {
+    width: 100px;
+    height: 100px; }
+  .footer {
+    height: 100px; }
+  .listas li {
+    font-size: 12px; }
+  .logo img {
+    height: 55px; } }
+
+/* FIN GALERIA */
 .main {
   display: grid;
   grid-template-columns: 20% 20% 20% 20%;
@@ -231,44 +272,3 @@ footer {
     height: 55px; } }
 
 /* FIN MUSICA */
-.contenedor_main {
-  display: grid;
-  grid-template-columns: 25% 25%;
-  grid-template-rows: 500px;
-  grid-template-areas: "a1 a2";
-  justify-content: center;
-  height: 650px;
-  align-items: center;
-  background-color: black;
-  gap: 250px; }
-
-.formulario {
-  border: 3px solid black;
-  padding: 1rem;
-  text-align: center;
-  background-color: cadetblue;
-  grid-area: a2; }
-
-.parrafo_main {
-  text-align: start;
-  font-size: 20px;
-  color: cadetblue; }
-
-@media only screen and (max-width: 600px) {
-  .contenedor_main {
-    display: flex;
-    flex-direction: column;
-    height: 1200px; }
-  .formulario {
-    padding-top: 2rem; }
-  .parrafo_main {
-    margin-top: 6rem; }
-  .header {
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
-  .logo img {
-    height: 55px; } }
-
-/* FIN CONTACTO */

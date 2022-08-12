@@ -1,0 +1,56 @@
+.contenedor_main{
+    display: grid;
+    grid-template-columns: 25% 25%;
+    grid-template-rows: 500px;
+    grid-template-areas: "a1 a2";
+    justify-content: center;
+    height: 650px;
+    align-items: center;
+    background-color: black;
+    gap: 250px;
+}
+
+.formulario{
+    
+    border: 3px solid black;
+    padding: 1rem;
+    text-align: center;
+    background-color: cadetblue;
+    grid-area: a2;
+}
+
+.parrafo_main{
+    text-align: start;
+    font-size: 20px;
+    color: cadetblue
+
+}
+
+@media only screen and (max-width:600px){
+    .contenedor_main{
+        display: flex;
+        flex-direction: column;
+        height: 1200px;
+    }
+
+    .formulario{
+        padding-top: 2rem;
+    }
+
+    .parrafo_main{
+        margin-top: 6rem;
+    }
+    .header{
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .logo img{
+        height: 55px;
+    }
+    
+}
+
+
+/* FIN CONTACTO */
