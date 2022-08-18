@@ -18,11 +18,24 @@
     background-color: cadetblue;
     grid-area: a2;
 }
-
-.parrafo_main{
+.msj{
+    color: cadetblue;
     text-align: start;
+
+}
+
+
+.msj__titulo{
+    @extend .msj;
+    font-size: 40px;
+    
+
+}
+
+.msj__parrafo{
+    @extend .msj;
     font-size: 20px;
-    color: cadetblue
+    
 
 }
 

@@ -27,14 +27,15 @@ header {
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/38/XO_-_2.gif);
   height: 750px; }
 
-.parrafo {
+.msj_parrafo {
   color: white;
-  font-weight: 1000;
-  font-size: 20px; }
+  font-size: 20px;
+  font-weight: small; }
 
-.main h1 {
+.msj_titulo {
   color: cadetblue;
-  font-size: 40px; }
+  font-size: 40px;
+  font-weight: medium; }
 
 .video {
   padding: 2rem; }
@@ -89,10 +90,15 @@ footer {
   background-color: cadetblue;
   grid-area: a2; }
 
-.parrafo_main {
-  text-align: start;
-  font-size: 20px;
-  color: cadetblue; }
+.msj, .msj__titulo, .msj__parrafo {
+  color: cadetblue;
+  text-align: start; }
+
+.msj__titulo {
+  font-size: 40px; }
+
+.msj__parrafo {
+  font-size: 20px; }
 
 @media only screen and (max-width: 600px) {
   .contenedor_main {

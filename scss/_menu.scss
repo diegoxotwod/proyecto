@@ -30,16 +30,23 @@ header{
 
 
 }
-.parrafo{
-    color: white;
-    font-weight: 1000;
-    font-size: 20px;
+
+@mixin estilos_alerta( $color_letra , $tamanio_letra , $grosor_letra) {
+    color: $color_letra;
+    font-size: $tamanio_letra;
+    font-weight: $grosor_letra;
+
+    
+}
+.msj_parrafo{
+
+    @include estilos_alerta(white, 20px, small )
     
 }
 
-.main h1{
-    color: cadetblue;
-    font-size: 40px;    
+.msj_titulo{
+ 
+    @include estilos_alerta(cadetblue, 40px, medium )  
 }
 
 
