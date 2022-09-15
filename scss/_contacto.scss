@@ -10,6 +10,10 @@
     gap: 250px;
 }
 
+.container_main{
+    background-color: black;
+}
+
 .formulario{
     
     border: 3px solid black;
@@ -40,18 +44,31 @@
 }
 
 @media only screen and (max-width:600px){
-    .contenedor_main{
+    .contenedor_main{   
+        margin-top: 6rem;
+        
+    }
+
+    .container_main{
+        height: 1100px;
         display: flex;
         flex-direction: column;
-        height: 1200px;
+
     }
 
     .formulario{
-        padding-top: 2rem;
+        height: 500px;
+        
     }
+    
+    .msj__titulo{
+        
+        font-size: 35px;
 
-    .parrafo_main{
-        margin-top: 6rem;
+    }
+    .msj__parrafo{
+        font-size: 15px;    
+        
     }
     .header{
         height: 150px;
